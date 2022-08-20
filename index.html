@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/input.css">
+    <script src="/NoSleep.min.js"></script>
+</head>
+<body onload="startTime()" class="h-full flex flex-col bg-[#000] p-4">
+    <div class="grid grid-cols-4  gap-3 mt-[10rem]">
+        <div class="col-start-1 col-end-3 rounded-lg flex flex-col justify-center items-center bg-[#22223b]">
+            <p id="time" class="text-[9rem] text-[#fffbfb] font-bold">23:56</p>
+            <p id="todayDay" class="text-white tracking-[20px] uppercase font-bold ">DAY</p>
+        </div>
+        <div class="text-white bg-[#22223b] rounded-lg p-3 ">
+            <div class="flex justify-center items-center pb-2 border-b border-y-gray-700">
+                <p class="text-5xl pr-5" id="todayDate">DATE</p>
+                <ul>
+                    <li id="todayMonth" >MONTH</li>
+                    <li id="todayYear">YEAR</li>
+                </ul>
+                
+            </div>
+            <div class="flex justify-center `items-center pt-2 pb-2 border-b border-y-gray-700">
+                <div class="flex">
+                  <p class="text-7xl" id="temp"></p>
+                  <span>&degC</span>
+                </div>
+                <img class="h-20" id="icon" src="" alt="" srcset="" />
+                
+              </div>
+        </div>
+        <div class=" rounded-lg">
+                <!-- Start of nepali patro badge -->
+                    <script type="text/javascript">
+                        var nc_cb_width = 220;
+                        var nc_cb_height = 250;
+                        var nc_cb_shadow = 'true';
+                        var nc_cb_api_id = 22220220820226; //-->
+                    </script>
+                    <script type="text/javascript" src="https://www.ashesh.com.np/nepali-calendar/widget/cb.js"></script>
+                <!-- End of nepali patro badge -->
+        </div>
+    </div>
+    <script src="/weather.js"></script>
+    <script src="/time.js"></script>
+</body>
+</html>
